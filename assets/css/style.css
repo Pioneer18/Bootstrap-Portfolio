@@ -1,0 +1,36 @@
+
+/*navbar styles*/
+.navbar-brand {
+    height:80px;
+    background:#4aaa;
+    margin:0;
+    padding: 20px 10px 0px 10px;
+    color:#fff;
+}
+
+.nav-link{
+    color:#4aaa;
+}
+
+.navbar {
+    padding:0;
+}
+
+/*contact styles*/
+
+.btn{
+    background: #4aaa;
+}
+
+.imgBox{
+    height:200px;
+}
+
+#b1 {
+    height:100%;
+    background-image:url("../images/focus.jpg");
+    background-size: cover;
+}
+
+
+  

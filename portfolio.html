@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>My Bootstrap Built Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Bootstrap Built Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+        <link href="assets/css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <header> <!--header-->
-        <div class="navbar navbar-expand-sm p-3 border-bottom"><!--BS4 navbar stacks for sm screens border on bottom (may need custom cs to size border thickness-->
+        <div class="navbar navbar-expand-sm border-bottom mb-5"><!--BS4 navbar stacks for sm screens border on bottom (may need custom cs to size border thickness-->
             <div class="container"><!--container fixed width 960px min yet responsive-->
                 <a class="navbar-brand" href="#">Jonathan Sells</a><!--logo tag-->
                 <ul class="navbar-nav ml-auto"><!--BS4 navbar navigation list to hold links pushed to the right-->
@@ -23,5 +24,43 @@
             </div>    
         </div>
     </header>
+    
+    <div class="container border p-5"><!--the main container-->
+       <div class="row imgBox">
+            <!--gallery image box-->
+            <div id="b1" class="col-4 border border-success mb-3 mr-3 ">
+                <h1></h1>
+            </div>
+            <!--gallery image box-->
+            <div id ="b2" class="col-4 border border-success mb-3">
+                <h1></h1>
+            </div>
+       </div>
+       <div class="row imgBox">
+           <!--gallery image box-->
+            <div id="b3" class="col-4 border border-success mb-3 mr-3">
+                <h1></h1>
+            </div>
+            <!--gallery image box-->
+            <div id="b4"class="col-4 border border-success mb-3">
+                <h1></h1>
+            </div>
+       </div>
+       <!--gallery image box-->
+       <div id="b5"class="row imgBox">
+           <div class="col-4 border border-success">
+               <h1>
+           </div>
+       </div>
+    </div>
+
+    <footer>
+        <div class="row d-flex p-3 mt-5 fixed-bottom bg-dark"><!--this row imgBox  is acting as a footer-->
+            <div class="col-12">
+               <p class="d-flex justify-content-center text-white">Coded with love and Bootstrap 4</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
