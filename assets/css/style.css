@@ -23,7 +23,8 @@
 }
 
 .imgBox{
-    height:200px;
+    height:200px;margin-bottom: 15px;
+
 }
 
 #b1 {
@@ -32,5 +33,23 @@
     background-size: cover;
 }
 
-
-  
+#b2{
+    height:100%;
+    background-image:url("../images/bird.jpg");
+    background-size: cover;
+}  
+#b3{
+    height:100%;
+    background-image:url("../images/car-tire.jpg");
+    background-size: cover;
+}  
+#b4{
+    height:100%;
+    background-image:url("../images/long-road.jpg");
+    background-size: cover;
+}  
+#b5{
+    height:100%;
+    background-image:url("../images/logo_555x333.jpg");
+    background-size: cover;
+}  
