@@ -69,9 +69,28 @@
 }
 
 h2{
-    color:#4aaa;
+    color:#fff;
+    font-size: 20px;
+    background:#4aaa;
 }
 
 h1{
     color:#fff;
+}
+
+#b1, #b2, #b3, #b4, #b5 {
+    padding-top: 128px;   
+    position:relative;
+}
+
+.label{
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    
+}
+
+.col-4.border.border-success {
+    padding-right:10px;
 }
