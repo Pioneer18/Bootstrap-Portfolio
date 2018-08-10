@@ -1,5 +1,10 @@
 
 /*navbar styles*/
+body {
+    min-height: 400px;
+    margin-bottom: 100px;
+    clear: both;
+ }
 .navbar-brand {
     height:80px;
     background:#4aaa;
