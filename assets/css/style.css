@@ -5,6 +5,11 @@ body {
     margin-bottom: 100px;
     clear: both;
  }
+
+.fixed-bottom{
+    height:17px;
+}
+
 .navbar-brand {
     height:80px;
     background:#4aaa;
