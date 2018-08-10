@@ -12,14 +12,14 @@ body {
 
 .navbar-brand {
     height:80px;
-    background:#4aaa;
+    background:#252839;
     margin:0;
     padding: 20px 10px 0px 10px;
     color:#fff;
 }
 
 .nav-link{
-    color:#4aaa;
+    color:#252839;
 }
 
 .navbar {
@@ -29,7 +29,7 @@ body {
 /*contact styles*/
 
 .btn{
-    background: #4aaa;
+    background: #252839;
 }
 
 .imgBox{
@@ -60,7 +60,7 @@ body {
 }  
 #b5{
     height:100%;
-    background-image:url("../images/logo_555x333.jpg");
+    background-image:url("../images/Screenshot\ \(22\).png");
     background-size: cover;
 }  
 
@@ -79,7 +79,7 @@ body {
 }
 
 h3{
-    color:#4aaa;
+    color:#252839;
     border-bottom:#333;
 }
 
@@ -95,7 +95,7 @@ h3{
 h2{
     color:#fff;
     font-size: 20px;
-    background:#4aaa;
+    background:#252839;
 }
 
 h1{
