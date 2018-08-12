@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html id="parallaxHTML">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-    <style>
-        body,html{
-            height:100%;
-        }
-
-        .parrallax{
-            /*the image used*/
-            background-image: url("")
-        }
-    </style>
-</body>
+    <p>this is an example of how the parallax background image (cover image w/scroll up) effect should work. hopefully this works on the first attempt!</p>
+    <p>scroll up and down the page to see the parrallax scrolling effect.</p>
+        
+    <div class="parrallax"></div>
+        
+    <div style="height:1000px;background-color:red;font-size:36px">
+        This div is just here to enable scrolling. try to remove the backround-attachment property to remove the scrolling effect. 
+    </div>
+</body id="parallaxBody">
 </html>
