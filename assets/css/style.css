@@ -64,13 +64,13 @@ body {
     background-size: cover;
 }  
 
-/*#aboutImg{
+#aboutImg{
     width:200px; 
     height: 200px; 
     margin:0 20px 0 0px;
     background-image: url("../images/slack_photo.jpg");
-    background-size: cover;
-}*/
+    border-radius:50%;
+}
 
 .img-thumbnail {
     height:200px;
@@ -95,8 +95,8 @@ h3{
 h2{
     color:#fff;
     font-size: 20px;
-    background:#252839;
 }
+
 
 h1{
     color:#fff;
@@ -125,19 +125,42 @@ h1{
     padding:0px;
 }
 
-/*paralax styles*/
+
+/*Redoing the styling entirely startign with -- paralax styles*/
+/* 
+    color palette:
+    Yellow Hand: #fbf579
+    Lonely Blue: #005995
+    Stationary Pink Red: #fa625f
+    Purpled: #600473
+*/
+
 #parallaxBody,#parallaxHTML{
     height:100%;
 }
 
-.parrallax{
-    /*the image used*/
-    background-image: url("../images/bird.jpg");
+.parrallax{ 
+    /*the image used and relative parent element to teh about-me text*/
+    background-image: url("../images/arduino_background.jpg");
     height:100%;
     background-attachment: fixed;
     background-position:center;
     background-repeat: no-repeat;
     background-size:cover;
+    text-align:center;
+    line-height: 20px;
+    position: relative;
+}
+
+#about-me{
+  position: absolute;
+  top:50%;
+  left:50%;
+  /*the above sets the top left corner to the center*/
+  height:30%;
+  width:70%;
+  /*give element negative top and left margin equal to half its height and width*/
+  margin:-15% 0 0 -35%;
 }
 
 @media only screen and (max-device-width: 1366px){
