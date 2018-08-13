@@ -5,40 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>
-<style>
-   
-
-    .parrallax{
-        /*the image used*/
-        height:100%;
-        background-attachment: fixed;
-        background-position:center;
-        background-repeat: no-repeat;
-        background-size:cover;
-    }
-
-    @media only screen and (max-device-width: 1366px){
-        .parrallax{
-            background-attachment: scroll;
-        }
-    }
-</style>
 <body id="parallaxBody">
-    <p>this is an example of how the parallax background image (cover image w/scroll up) effect should work. hopefully this works on the first attempt!</p>
-    <p>scroll up and down the page to see the parrallax scrolling effect.</p>
-        
+    <!--header-->
+    <header>
+        <div class="navbar navbar-expand-sm"><!--BS4 navbar stacks for sm screens border on bottom (may need custom cs to size border thickness-->
+            <a class="navbar-brand" href="/">Jonathan Sells</a><!--logo tag-->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">;</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto"><!--BS4 navbar navigation list to hold links pushed to the right-->
+                    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+                    <li class="nav-item border-left"><a class="nav-link" href="portfolio2.html">Portfolio</a></li>
+                    <li class="nav-item border-left"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--main landing page image-->
     <div class="parrallax">
-            <!--trying text align center to get this to work-->
             <div id="about-me">
                 <h2>IoT / Embedded Systems &amp; Solutions / Web Applications</h2><h1>Designer / Developer</h1>
             </div>
     </div>
 
-        
-    <div style="height:1000px;background-color:red;font-size:36px">
-        This div is just here to enable scrolling. try to remove the backround-attachment property to remove the scrolling effect. 
+    <div class="row mb-0">
+        <div class="jumbotron">
+            <h3>About Me</h3>
+            <img src="assets/images/slack_photo.jpg" alt="proilfe" style="height:auto;width:300px;">
+            <p>I am passionate about rapidly designing and prototyping IoT solutions and smart systems. My interests are in developing efficient smart agriculture and energy consumption systems that protect the environment as well as lower operating costs.</p> 
+            <p>I began developing my electronic hardware skills while working as an electronics repair technician in my brother’s Ubreakifix repair shop. For years I have disassembled, modified, and repaired a wide variety of consumer electronics while also programming arduinos. I have designed and built several automated indoor agricultural systems with real time sensor data and responsive environmental control output, such as turning on A/C. While attending the UCF 2018 Spring coding boot camp, I dramatically improved my programming skills and became a true full stack web developer. I am eager to develop innovation IoT applications and systems.</p>
+        </div>
     </div>
+
+    <div class="row justify-content-center mt-0" id="card-row">
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="img-top img-fluid" src="assets/images/Screenshot (26).png" alt="project-description" style="height:auto;width:100%;">
+                <div class="card-body">
+                    <h5 class="card-title">GardenHub</h5>
+                    <p>check out this cool Green App</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="img-top img-fluid" src="assets/images/Screenshot (18).png" alt="project-description" style="height:auto;width:100%;">
+                <div class="card-body">
+                    <h5 class="card-title">Trivia Game</h5>
+                    <p>check out this cool Green App</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center" id="card-row">
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="img-top img-fluid" src="assets/images/Screenshot (20).png" alt="project-description" style="height:auto;width:100%;">
+                <div class="card-body">
+                    <h5 class="card-title">Giftastic</h5>
+                    <p>check out this cool Gif app</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="img-top img-fluid" src="assets/images/Screenshot (21).png" alt="project-description" style="height:auto;width:100%;">
+                <div class="card-body">
+                    <h5 class="card-title">Gems Game</h5>
+                    <p>check out this cool Green App</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </body>
 </html>
