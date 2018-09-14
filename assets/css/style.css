@@ -114,10 +114,26 @@ h1{
     Stationary Pink Red: #fa625f
     Purpled: #60473
 */
+
+/*=================about me section======================*/
 .container{
-    margin:0;
-    padding-left:0;
+    background-color: #fff;
+    margin:20px auto;
+    padding:25px;
 }
+
+#pro-img{
+    border-radius: 500px;
+    display: block;
+    height:auto;
+    width:100%;
+  }
+
+
+
+/*=================about me section======================*/
+
+
 .navbar{
     border-bottom:1px soild #005995;
 }
@@ -176,17 +192,19 @@ p{
     height:100%;
 }
 
-.parrallax{ 
+.parallax{ 
     /*the image used and relative parent element to teh about-me text*/
     background-image: url("../images/arduino_background.jpg");
+    /*need to set a specific height*/
     height:100%;
+    /*create the parallax scrolling effect*/
     background-attachment: fixed;
     background-position:center;
     background-repeat: no-repeat;
     background-size:cover;
     text-align:center;
     line-height: 20px;
-    position: relative;
+    /*position: relative;*/
 }
 
 #about-me{
