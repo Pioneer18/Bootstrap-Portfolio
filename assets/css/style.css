@@ -4,59 +4,9 @@
     height:40px;
 }
 
-/*contact styles*/
 
-.btn{
-    background: #252839;
-}
 
-.imgBox{
-    height:200px;margin-bottom: 15px;
 
-}
-
-#b1 {
-    height:100%;
-    background-image:url("../images/Screenshot\ \(21\).png");
-    background-size: cover;
-}
-
-#b2{
-    height:100%;
-    background-image:url("../images/Screenshot\ \(20\).png");
-    background-size: cover;
-}  
-#b3{
-    height:100%;
-    background-image:url("../images/Screenshot\ \(18\).png");
-    background-size: cover;
-}  
-#b4{
-    height:100%;
-    background-image:url("../images/veggies_soil_4.jpg");
-    background-size: cover;
-}  
-#b5{
-    height:100%;
-    background-image:url("../images/Screenshot\ \(22\).png ");
-    background-size: cover;
-}  
-
-#aboutImg{ 
-    margin:0 15px 20px 0px;
-    border-radius:20%;
-    height:auto;
-    width:300px;
-}
-#aboutImg::after{
-    clear:both;
-}
-
-.img-thumbnail {
-    height:200px;
-    width:250px;
-    margin: 0px 15px 0px 0px;
-}
 
 h3{
     color:#252839;
@@ -82,10 +32,6 @@ h1{
     color:#fff;
 }
 
-#b1, #b2, #b3, #b4, #b5 {
-    padding-top: 128px;   
-    position:relative;
-}
 
 .label{
     position:absolute;
@@ -239,6 +185,7 @@ p{
     padding:20px;
 }
 .project{
+    background-color: #fff;
     color:black;
     font-family:'Roboto', sans-serif;
     /*to hold the card-img-overlay*/
@@ -247,7 +194,38 @@ p{
     display: flex;
     flex-direction: column;
     min-width:0;
+    min-height: 40px;
     margin: 10px 0;
+
+}
+
+.card-img-overlay {
+    padding: 3rem 0;
+    color: #ffffff;
+    background-color: #000;
+    transition: opacity 0.5s;
+    opacity:0;
+}
+
+.card-img-overlay:hover{
+    opacity: .8;
+}
+
+.card-img{
+    width:100%;
+    border-radius: 0;
+}
+
+a:hover {
+    transition: opacity 0.5s;
+    opacity: 1;
+    color: silver;
+    text-decoration: none;
+}
+
+.img{
+    width: 100%;
+    display: block;
 }
 
 
