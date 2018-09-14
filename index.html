@@ -1,94 +1,110 @@
-<!--
-
-   * A navbar
-
-   * A responsive layout (remember the grid, rows and columns are your friends)
-
-     * eg. On `xs` and `sm` screens, content should take up the entire screen. On `md` and larger screens, you should have some margins on the left and right side of the screen. Check out various sites on your mobile device versus your computer to see this in action!
-
-   * Responsive images
-
-   **BONUS**
-   Using Bootstrap, make a sticky footer and use sub-rows and sub-columns on your portfolio site _(Hint: Check out the Bootstrap documentation)_
-
-3. Your Bootstrap solution should minimize use of media queries.
-
-4. Deploy your new Bootstrap-powered portfolio to GitHub Pages.
-
--->
-
-
-<!--
-    Approach:
-        *use a navbar div for the nav bar. first item is an 
-        navbar navbar-expand-sm (this will make it stack on tabs and cellphones)
-        <a class="navbar-brand" href="#">Jonathan Sells</a>
-        this is a logo setup
-
--->
-
-
-<!--
-    site dimensions/ specifications
-    *container min width = 960px
-    *
-
--->
-
 <!DOCTYPE html>
-<html>
-    <head>
-            <meta charset="utf-8" />
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title>My Bootstrap Built Portfolio</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-            <link href="assets/css/style.css" type="text/css" rel="stylesheet">
-    </head>
-    <body>
-        <header> <!--header-->
-            <div class="navbar navbar-expand-sm border-bottom mb-5"><!--BS4 navbar stacks for sm screens border on bottom (may need custom cs to size border thickness-->
-                <div class="container"><!--container fixed width 960px min yet responsive-->
-                    <a class="navbar-brand" href="#">Jonathan Sells</a><!--logo tag-->
-                    <ul class="navbar-nav ml-auto"><!--BS4 navbar navigation list to hold links pushed to the right-->
-                        <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-                        <li class="nav-item border-left"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                        <li class="nav-item border-left"><a class="nav-link" href="contact.html">Contact</a></li>
-                        <link href="assets/css/style.css" type="text/css" rel="stylesheet">
-                    </ul>
-                </div>    
-            </div>
-        </header>
+<html id="parallaxHTML">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>
+<body id="parallaxBody">
+    <!--header-->
+    <header>
+        <div class="navbar navbar-expand-sm"><!--BS4 navbar stacks for sm screens border on bottom (may need custom cs to size border thickness-->
+            <a class="navbar-brand" href="/">Jonathan Sells</a><!--logo tag-->
 
-        <div class="container border p-5"><!--the main container-->
-            <div class="title" class="row"><!--this row is to contain a single column containing the header-->
-                <div class="col-sm-12">
-                    <h3>About Me</h3>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">;</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto"><!--BS4 navbar navigation list to hold links pushed to the right-->
+                    <li class="nav-item"><a class="nav-link" href="portfolio2.html#about">About</a></li>
+                    <li class="nav-item border-left"><a class="nav-link" href="portfolio2.html">Portfolio</a></li>
+                    <li class="nav-item border-left"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--main landing page image-->
+    <div class="parrallax">
+            <div id="about-me">
+                <h2>IoT / Embedded Systems &amp; Solutions / Web Applications</h2><h1>Designer / Developer</h1>
+            </div>
+    </div>
+
+    <div class="row mb-0">
+        <div id="test" class="jumbotron">
+            <h3 id="about">About Me</h3>
+            <img src="assets/images/nippon-profile.jpg" alt="proilfe" style="height:auto;width:300px;">
+            <p>I am passionate about rapidly designing and prototyping IoT solutions and smart systems. My interests are in developing efficient smart agriculture and energy consumption systems that protect the environment as well as lower operating costs.</p> 
+            <p>I began developing my electronic hardware skills while working as an electronics repair technician in my brother’s Ubreakifix repair shop. For years I have disassembled, modified, and repaired a wide variety of consumer electronics while also programming arduinos. I have designed and built several automated indoor agricultural systems with real time sensor data and responsive environmental control output, such as turning on A/C. While attending the UCF 2018 Spring coding boot camp, I dramatically improved my programming skills and became a true full stack web developer. I am eager to develop innovation IoT applications and systems.</p>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-0" id="card-row">
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="img-top img-fluid" src="assets/images/Screenshot (26).png" alt="project-description" style="height:auto;width:100%;">
+                <div class="card-body">
+                    <h5 class="card-title">GardenHub</h5>
+                    <p>check out this cool Green App</p>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-sm-12">
-                    <div id ="aboutImg" class="float-left">
-                        <img alt="my profile image - responsive" class="img-thumbnail" src="assets/images/slack_photo.jpg">
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="img-top img-fluid" src="assets/images/Screenshot (18).png" alt="project-description" style="height:auto;width:100%;">
+                <div class="card-body">
+                    <h5 class="card-title">Trivia Game</h5>
+                    <p>check out this cool Green App</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center" id="card-row">
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="img-top img-fluid" src="assets/images/Screenshot (20).png" alt="project-description" style="height:auto;width:100%;">
+                <div class="card-body">
+                    <h5 class="card-title">Giftastic</h5>
+                    <p>check out this cool Gif app</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <!--<div class="card">
+                <img class="img-top img-fluid" src="assets/images/Screenshot (21).png" alt="project-description" style="height:auto;width:100%;">
+                <div class="card-body">
+                    <h5 class="card-title">Gems Game</h5>
+                    <p>check out this cool Green App</p>
+                </div>
+            </div>
+        </div>-->
+        <div class="col-sm-4">
+            <div clas="row">
+                <div class="card text-white">
+                    <img class="img-top img-fluid"  src="assets/images/Screenshot (21).png" alt="Card image" style="height:auto;width:100%;">
+                    <div class="card-img-overlay">
+                        <a href="https://bmjanuska.github.io/psyhic_game.github.io/" class="btn btn-primary btn-block">Psychic Game</a>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo massa ac tempus suscipit. Duis a lorem at ex rutrum varius eget eget ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum hendrerit finibus urna vitae sodales. Fusce dictum sodales sem a porta. Fusce dictum suscipit ex, eget cursus sapien varius a. Morbi quis fringilla risus. In varius leo nec dolor mattis, nec mattis leo tempor. Donec ac elementum arcu.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo massa ac tempus suscipit. Duis a lorem at ex rutrum varius eget eget ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum hendrerit finibus urna vitae sodales. Fusce dictum sodales sem a porta. Fusce dictum suscipit ex, eget cursus sapien varius a. Morbi quis fringilla risus. In varius leo nec dolor mattis, nec mattis leo tempor. Donec ac elementum arcu.</p>
                 </div>
             </div>
-
-        </div><!--end container-->
-        
-        <footer>
-            <div class="row d-flex p-3 mt-2 fixed-bottom bg-dark"><!--this row is acting as a footer-->
-                <div class="col-12">
-                    <p class="d-flex justify-content-center text-white">Coded with love and Bootstrap 4</p>
-                </div>
-            </div>
-        </footer>
-        
-    </body>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-sm-8">
+            <h3>Contact Me</h3>
+            <ul>
+                <li><a href="https://github.com/Pioneer18/Pioneer18.github.io">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/jonathan-sells-5a829573/">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</body>
 </html>

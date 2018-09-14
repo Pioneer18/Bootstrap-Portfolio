@@ -134,8 +134,12 @@ h1{
 
 .jumbotron{
     color:black;
-    background:#fbf579; 
-    margin-bottom:0px;
+    margin: 0%;
+    border-bottom: 2px solid #005995
+}
+
+.row{
+    margin: 0% 5%;
 }
 
 p{
@@ -215,9 +219,7 @@ p{
     border-bottom:1px solid 
 }
 
-#card-row{
-    background:#005995;
-}
+
 
 
 
