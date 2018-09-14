@@ -120,10 +120,12 @@ h1{
     background-color: #fff;
     margin:20px auto;
     padding:25px;
+    font-size: 1rem;
 }
 
 #pro-img{
-    border-radius: 500px;
+    border-radius: 30px;
+    margin-bottom:15px;
     display: block;
     height:auto;
     width:100%;
