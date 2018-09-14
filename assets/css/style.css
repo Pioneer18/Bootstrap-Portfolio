@@ -189,6 +189,8 @@ p{
     padding:0;
 }
 
+/*/////////////////////////////////////////////////////////////////////////////*/
+
 
 #parallaxBody,#parallaxHTML{
     height:100%;
@@ -209,6 +211,15 @@ p{
     /*position: relative;*/
 }
 
+
+@media only screen and (max-device-width: 1366px){
+    .parrallax{
+        background-attachment: scroll;
+    }
+}
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
 #about-me{
   position: absolute;
   top:50%;
@@ -227,16 +238,16 @@ p{
 .col-sm-4{
     padding:20px;
 }
-.card{
+.project{
     color:black;
     font-family:'Roboto', sans-serif;
-    height:100%;
-}
-
-.card-title{
-    color:black;
-    font-family:"Georgia";
-    border-bottom:1px solid 
+    /*to hold the card-img-overlay*/
+    position: relative;
+    /*setting up flex positioning*/
+    display: flex;
+    flex-direction: column;
+    min-width:0;
+    margin: 10px 0;
 }
 
 
