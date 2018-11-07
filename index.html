@@ -6,8 +6,7 @@
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
@@ -18,20 +17,25 @@
     <header>
         
         <!--NAVBAR-->
-        <div class="navbar navbar-expand-sm"><!--BS4 navbar stacks for sm screens border on bottom (may need custom cs to size border thickness-->
-            <a class="navbar-brand" href="/">Jonathan Sells</a><!--logo tag-->
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">;</span>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">JS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto"><!--BS4 navbar navigation list to hold links pushed to the right-->
-                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                    <li class="nav-item border-left"><a class="nav-link" href="index.html">Portfolio</a></li>
-                    <li class="nav-item border-left"><a class="nav-link" href="contact.html">Contact</a></li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
                 </ul>
             </div>
-        </div>
+        </nav>
         <!--END NAVBAR-->
         
     </header>
@@ -41,111 +45,155 @@
     <!--PARALLAX-->
     <div class="parallax">
         <div id="about-me">
-            <h2>IoT / Embedded Systems &amp; Solutions / Web Applications</h2><h1>Designer / Developer</h1>
+            <span id="pTitle">Hi, I am a Full Stack Web Developer</span>
         </div>
     </div>
     <!--END PARALLAX-->
 
+    <!--Section Divider-->
+
+    <div class = "section-divider">
+        <h3 id="about">About Me</h3>       
+    </div>
+
+    <!--End Section Divider-->
 
     <!--CONTAINER-->
     <div class="container">
+        
         <div class="row justify-content-center">
-            <!--Profile Photo-->
+            
             <div class="col-sm-7">
                 <img id="pro-img" src="assets/images/nippon-profile.jpg" alt="proilfe">
             </div>
-            <!--end profile photo-->
+           
         </div>
         <div class="row">
-            <!--bio-->
+            
             <div class="col">
-                <h3 id="about">About Me</h3>
                 <p>I am a full stack web developer, in training, and I am passionate about embedded software development for the Internet of Things. Like most developers, I earned my foundational skills by obsessively tinkering with microcontrollers for hours in my garage. My passion for IoT full stack development is uniquely rooted in my long term goal of one day launching a biotech company with a focus on crop yield and irrigation efficiency.</p>
                 <p>In order to springboard my skills beyond the level of a DIY hacker, I enrolled in the Trilogy Education Services Full Stack Web Development Boot Camp, located at the University of Central Florida. </p>
             </div>
-            <!--end bio-->
-        </div>
+        </div> 
+        
+
+    <!--Testing the Bootstrap Timeline-->
+
+
+
+    <ul class="timeline">
+            <li>
+                <div class="timeline-badge">
+                  <a><i class="fa fa-circle" id=""></i></a>
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>Timeline Event</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+                    </div>
+                    <div class="timeline-footer">
+                        <p class="text-right">Feb-21-2014</p>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="timeline-inverted">
+                <div class="timeline-badge">
+                    <a><i class="fa fa-circle invert" id=""></i></a>
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>Timeline Event</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Stranguillione in deinde cepit roseo commendavit patris super color est se sed. Virginis plus plorantes abscederem assignato ipsum ait regem Ardalio nos filiae Hellenicus mihi cum. Theophilo litore in lucem in modo invenit quasi nomen magni ergo est se est Apollonius, habet clementiae venit ad nomine sed dominum depressit filia navem.</p>
+                    </div>
+                    <div class="timeline-footer">
+                        <p class="text-right">Feb-23-2014</p>
+                    </div>
+                </div>
+            </li>
+            
+            <li>
+                <div class="timeline-badge">
+                    <a><i class="fa fa-circle" id=""></i></a>
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>Timeline Event</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Advenientibus aliorum eam ad per te sed. Facere debetur aut veneris accedens.</p>
+                    </div>
+                    <div class="timeline-footer">
+                        <p class="text-right">Feb-23-2014</p>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="timeline-inverted">
+                <div class="timeline-badge">
+                    <a><i class="fa fa-circle invert" id=""></i></a>
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>Timeline Event</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Volvitur ingreditur id ait mea vero cum autem quod ait Cumque ego illum vero cum unde beata. Commendavi si non dum est in. Dionysiadem tuos ratio puella ut casus, tunc lacrimas effunditis magister cives Tharsis. Puellae addita verbaque' capellam sanctissima quid, apollinem existimas filiam rex cum autem quod tamen adnuente rediens eam est se in. Peracta licet ad nomine Maria non ait in modo compungi mulierem volutpat.</p>
+                    </div>
+                    <div class="timeline-footer">
+                        <p class="text-right">Feb-27-2014</p>
+                    </div>
+                </div>
+            </li>
+            
+            <li>
+                <div class="timeline-badge">
+                    <a><i class="fa fa-circle" id=""></i></a>
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>Timeline Event</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Adfertur guttae sapientiae ducitur est Apollonius ut a a his domino Lycoridem in lucem. Theophile atque bona dei cenam veniebant est cum. Iusto opes mihi Tyrum in modo compungi mulierem ubi augue eiusdem ordo quos vero diam omni catervis famulorum. Bene dictis ut diem finito servis unde.</p>
+                    </div>
+                    <div class="timeline-footer">
+                        <p class="text-right">Mar-01-2014</p>
+                    </div>
+                </div>
+            </li>
+            
+            <li  class="timeline-inverted">
+                <div class="timeline-badge">
+                    <a><i class="fa fa-circle invert" id=""></i></a>
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>Timeline Event</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Crede respiciens loco dedit beneficio ad suis alteri si puella eius in. Acceptis codicello lenonem in deinde plectrum anni ipsa quod eam est Apollonius.</p>
+                    </div>
+                    <div class="timeline-footer primary">
+                        <p class="text-right">Mar-02-2014</p>
+                    </div>
+                </div>
+            </li>
+            <li class="clearfix no-float"></li>
+        </ul>
+
     </div>
     <!--END CONTAINER-->
 
 
-
-
-    <!--should be another parallax or something here-->
-
-
-
-
-    <!--CONTAINER - Portfolio -->
-    <div class="container">
-
-        <!--PORTFOLIO-->
-        <div class="row">
-
-            <div class="col-sm-6 ">
-                <div class="project">
-                    <img class="card-img" src="assets/images/Screenshot (26).png" alt="project-description" >
-                    <div class="card-img-overlay text-center">
-                        <a class="project-title">GardenHub</a>
-                        <a class="github">github</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6">
-                <div class="project">
-                    <img class="img-top img-fluid" src="assets/images/Screenshot (18).png" alt="project-description" >
-                    <div class="card-img-overlay text-center">
-                        <a class="project-title">Trivia Game</a>
-                        <a class="github">github</a>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-sm-6">
-
-                <div class="project">
-                    <img class="img-top img-fluid" src="assets/images/Screenshot (20).png" alt="project-description" >
-                    <div class="card-img-overlay text-center">
-                        <a class="project-title">Giftastic</a>
-                        <a class="github">github</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-sm-6">
-                <div class="project">
-                    <img class="img-top img-fluid" src="assets/images/Screenshot (21).png" alt="project-description" >
-                    <div class="card-img-overlay text-center">
-                        <a class="project-title">Gems Game</a>
-                        <a class="github">github</a>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-        <!--END PORTFOLIO-->
-
-    </div>
-    <!-- END CONTAINER - Portfolio -->
-
-
-    <!--Footer-->
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-sm-8">
-                <h3>Contact Me</h3>
-                <ul>
-                    <li><a href="https://github.com/Pioneer18/Pioneer18.github.io">Github</a></li>
-                    <li><a href="https://www.linkedin.com/in/jonathan-sells-5a829573/">LinkedIn</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--END FOOTER-->
         
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 </html>
