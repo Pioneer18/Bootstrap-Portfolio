@@ -13,17 +13,40 @@
 
 
 /*typography*/
+body {
+    background: #ffffff;
+    font-family: 'Open Sans'; 
+    font-weight: 300; 
+}
 
 h3{
-    color:#252839;
+    color:#000;
     border-bottom:#333;
     font-family:"Gerogia";
 }
 
+h2 {
+    margin-bottom: 30px;
+    color: #4679bd;
+    font-weight: 400;
+    text-align: center;
+}
 
 h1{
     color:#fff;
 }
+
+p.footer {
+    margin-bottom: 20px;
+    color: #999999;
+    font-size: 18px;
+    text-align: center;
+}
+
+.about-p {
+    font-size:1.2rem;
+}
+
 
 
 /*end typography*/
@@ -39,14 +62,24 @@ h1{
 
 
 
-.container{
+.about-container{
     background-color: #fff;
-    margin:20px auto;
-    padding:25px;
+    margin:0px auto;
+    padding: 2rem 6rem;
     font-size: 1rem;
     width: 100%;
 }
 
+.time-container{
+    background: #fff;
+    margin:0px auto;
+    padding: 2rem 6rem;
+    width:100%;
+}
+
+.timeline-body p {
+    font-size:1.2rem;
+}
 /*=========================================================End Grid==============================================*/
 
 
@@ -54,11 +87,11 @@ h1{
 
 /*=====================================navbar=====================================*/
 
-.navbar-brand {
+ .navbar-light .navbar-brand {
     height:60px;
-    background:#fff;
     margin:0;
-    padding: 20px 10px 0px 10px;
+    padding: 1rem auto;
+    font-size: 2rem;
     color:#fff;
 }
 
@@ -71,8 +104,13 @@ h1{
 
 .navbar {
     padding:0;
-    background: #fff;
-    color: #000;
+    background: #000000;
+   
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:#fff;
+    font-size: 1.5rem;
 }
 
 /*=================================End navbar===========================================*/
@@ -84,15 +122,17 @@ h1{
 
 #pro-img{
     border-radius: 30px;
-    margin-bottom:15px;
+    margin: 1rem auto 2rem;
     display: block;
     height:auto;
-    width:100%;
+    width:50%;
+    min-width: 150px;
   }
 
   .section-divider{
-    margin:15px 0px;
+    margin:20px 0px 0px;
     text-align: center;
+    color:#000;
 }
 
 
@@ -117,6 +157,8 @@ h1{
     height:100%;
 }
 
+
+
 .parallax{ 
     /*the image used and relative parent element to teh about-me text*/
     background-image: url("../images/dynamic_dark.jpg");
@@ -132,13 +174,20 @@ h1{
     /*position: relative;*/
 }
 
+
 #pTitle{
-    color:#C8C8C8;
-    font-size: 40px;
+    color:#fff;
+    font-size: 2.5rem;
 }
 
 @media only screen and (max-device-width: 1366px){
     .parrallax{
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (max-device-width: 1366px){
+    .parrallax2{
         background-attachment: scroll;
     }
 }
@@ -204,26 +253,6 @@ a:hover {
 /*timeline styles*/
 
 @import url(//fonts.googleapis.com/css?family=Open+Sans);
-body {
-    margin: 5px 20px;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNiIgaGVpZ2h0PSI2Ij4KPHJlY3Qgd2lkdGg9IjYiIGhlaWdodD0iNiIgZmlsbD0iI2VlZWVlZSI+PC9yZWN0Pgo8ZyBpZD0iYyI+CjxyZWN0IHdpZHRoPSIzIiBoZWlnaHQ9IjMiIGZpbGw9IiNlNmU2ZTYiPjwvcmVjdD4KPHJlY3QgeT0iMSIgd2lkdGg9IjMiIGhlaWdodD0iMiIgZmlsbD0iI2Q4ZDhkOCI+PC9yZWN0Pgo8L2c+Cjx1c2UgeGxpbms6aHJlZj0iI2MiIHg9IjMiIHk9IjMiPjwvdXNlPgo8L3N2Zz4=");
-    font-family: 'Open Sans'; 
-    font-weight: 300; 
-}
-
-h2 {
-    margin-bottom: 30px;
-    color: #4679bd;
-    font-weight: 400;
-    text-align: center;
-}
-
-p.footer {
-    margin-bottom: 20px;
-    color: #999999;
-    font-size: 18px;
-    text-align: center;
-}
 
 /* -----------------------------------------------
  * Timeline
@@ -342,6 +371,7 @@ p.footer {
     margin-bottom: 0;
 }
 .timeline-footer {
+    clear:both;
     padding: 5px 15px;
     background-color:#f4f4f4;
 }
@@ -362,6 +392,12 @@ p.footer {
 }
 .no-float {
     float: none !important;
+}
+.timeline-img img{
+    float:left;
+    height:auto;
+    width:50%;
+    min-width: 170px;
 }
 @media (max-width: 767px) {
     ul.timeline:before {
