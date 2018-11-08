@@ -380,16 +380,20 @@ a:hover {
     cursor: pointer;
     text-decoration: none;
 }
+/*floats inverted panels to the right side*/
 .timeline > li.timeline-inverted {
     float: right;
     clear: right;
 }
+/*staggers the events on the timeline*/
 .timeline > li:nth-child(2) {
     margin-top: 60px;
 }
+/*keeps inverted panel's dots on the timeline*/
 .timeline > li.timeline-inverted > .timeline-badge {
     left: -12px;
 }
+/*enables the time line to render*/
 .no-float {
     float: none !important;
 }
@@ -400,8 +404,11 @@ a:hover {
     min-width: 170px;
 }
 @media (max-width: 767px) {
+    .time-container{
+        padding:5px;
+    }    
     ul.timeline:before {
-        left: 40px;
+        left: 0px;
     }
     ul.timeline > li {
         margin-bottom: 0px;
