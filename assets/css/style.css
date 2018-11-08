@@ -182,7 +182,11 @@ p.footer {
 #pTitle h1{
     text-align: left;
     color:#fff;
-    font-size: 1.5rem;
+    font-size: 6.7rem;
+}
+
+#jsells{
+    color:gold;
 }
 
 @media only screen and (max-device-width: 1366px){
@@ -389,7 +393,7 @@ a:hover {
 }
 .timeline-footer {
     /*color:#4679bd;*/
-    color:#000000;
+    color:;
     clear:both;
     padding: 5px 15px;
     background-color:#e0e2e4;
@@ -482,5 +486,19 @@ a:hover {
     .timeline-img img{
         height: auto;
         width:90%;
+    }
+}
+
+/*mroe media queries*/
+
+/*very small - pixel xl screen size*/
+
+/*about me section*/
+@media (max-width:767px){
+    .about-container{
+        color:#000000;
+        margin:0px auto;
+        padding: 2rem 2rem;
+        font-size: 1rem;
     }
 }
