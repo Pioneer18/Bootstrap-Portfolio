@@ -182,11 +182,7 @@ p.footer {
 #pTitle h1{
     text-align: left;
     color:#fff;
-    font-size: 6.7rem;
-}
-
-#jsells{
-    color:gold;
+    font-size: 4.5rem;
 }
 
 @media only screen and (max-device-width: 1366px){
@@ -393,7 +389,7 @@ a:hover {
 }
 .timeline-footer {
     /*color:#4679bd;*/
-    color:;
+    color:#000000;
     clear:both;
     padding: 5px 15px;
     background-color:#e0e2e4;
@@ -492,7 +488,79 @@ a:hover {
 /*mroe media queries*/
 
 /*very small - pixel xl screen size*/
-
+@media(max-width: 1211px){
+    #pTitle h1 {
+        font-size: 3.9rem;
+    }
+@media(max-width: 1061px){
+    #pTitle h1 {
+        font-size: 3.9rem;
+    }
+@media(max-width: 1113px){
+    #pTitle h1 {
+        font-size: 3.5rem;    
+    }
+}
+@media(max-width: 888px){
+    #pTitle h1{
+        font-size: 3.2rem;
+    }
+}
+@media(max-width: 817px){
+    #pTitle h1{
+        font-size: 3rem;
+    }
+}
+@media(max-width: 762px){
+    #pTitle h1{
+        font-size: 2.8rem;
+    }
+}
+@media(max-width: 712px){
+    #pTitle h1{
+        font-size: 2.5rem;
+    }
+}
+@media(max-width: 639px){
+    #pTitle h1{
+        font-size: 2.3rem;
+    }
+}
+@media(max-width: 585px){
+    #pTitle h1{
+        font-size: 2rem;
+    }
+}
+@media(max-width: 529px){
+    #pTitle h1{
+        font-size: 1.8rem;
+    }
+}
+@media(max-width: 463px){
+    #pTitle h1 {
+        font-size: 1.6rem
+    }   
+}
+@media(max-width: 414px){
+    #pTitle h1 {
+        font-size: 1.4rem
+    }   
+}
+@media (max-width: 364px){
+    #pTitle h1 {
+        font-size:1.3rem;
+    }
+}
+@media(max-width: 339px){
+    #pTitle h1 {
+        font-size:1.2rem;
+    }
+}
+@media(max-width: 314px){
+    #pTitle h1 {
+        font-size:1.1rem;
+    }
+}
 /*about me section*/
 @media (max-width:767px){
     .about-container{
