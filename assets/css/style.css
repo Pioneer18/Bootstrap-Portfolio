@@ -26,14 +26,12 @@ h3{
     font-family:"Helvetica";
     font-size: 3rem;
 }
-
 h2 {
     margin-bottom: 30px;
     color: #4679bd;
     font-weight: 400;
     text-align: center;
 }
-
 h1{
     color:#fff;
 }
@@ -133,7 +131,7 @@ p.footer {
     min-width: 150px;
   }
 
-  .section-divider{
+.section-divider{
     margin:2.5rem 0 0;
     text-align: center;
     color:#000;
@@ -216,7 +214,6 @@ p.footer {
     min-width:0;
     min-height: 40px;
     margin: 15px 0;
-
 }
 
 .card-img-overlay {
@@ -395,7 +392,9 @@ a:hover {
     background-color:#e0e2e4;
     font-size:1.5rem;
 }
-.timeline-footer p { margin-bottom: 0; }
+.timeline-footer p { 
+    margin-bottom: 0; 
+}
 .timeline-footer > a {
     cursor: pointer;
     text-decoration: none;
@@ -417,7 +416,7 @@ a:hover {
 .no-float {
     float: none !important;
 }
-.timeline-img img{
+.timeline-img img {
     float:left;
     height:auto;
     width:90%;
@@ -492,10 +491,12 @@ a:hover {
     #pTitle h1 {
         font-size: 3.9rem;
     }
+}
 @media(max-width: 1061px){
     #pTitle h1 {
-        font-size: 3.9rem;
+        font-size: 3.6rem;
     }
+}
 @media(max-width: 1113px){
     #pTitle h1 {
         font-size: 3.5rem;    
