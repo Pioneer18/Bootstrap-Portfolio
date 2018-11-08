@@ -79,6 +79,7 @@ p.footer {
 
 .timeline-body p {
     font-size:1.2rem;
+    clear:left;
 }
 /*=========================================================End Grid==============================================*/
 
@@ -125,7 +126,7 @@ p.footer {
     margin: 1rem auto 2rem;
     display: block;
     height:auto;
-    width:50%;
+    width:70%;
     min-width: 150px;
   }
 
@@ -400,8 +401,15 @@ a:hover {
 .timeline-img img{
     float:left;
     height:auto;
-    width:50%;
+    width:90%;
     min-width: 170px;
+}
+
+#study_img{
+    float:left;
+    margin-left:1.2rem;
+    height:auto;
+    width:70%;
 }
 @media (max-width: 767px) {
     .time-container{
@@ -450,5 +458,9 @@ a:hover {
     }
     .timeline > li.timeline-inverted > .timeline-badge {
         left: 28px;
+    }
+    .timeline-img img{
+        height: auto;
+        width:90%;
     }
 }
