@@ -80,6 +80,7 @@ p.footer {
 .timeline-body p {
     font-size:1.2rem;
     clear:left;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 /*=========================================================End Grid==============================================*/
 
@@ -91,9 +92,19 @@ p.footer {
  .navbar-light .navbar-brand {
     height:60px;
     margin:0;
-    padding: 1rem auto;
     font-size: 2rem;
-    color:#fff;
+    font-weight: 400;
+    color:#F0DB4F;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.8125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
 }
 
 
@@ -112,6 +123,10 @@ p.footer {
 .navbar-light .navbar-nav .nav-link {
     color:#fff;
     font-size: 1.5rem;
+}
+
+.nav-container{
+     width:80%;
 }
 
 /*=================================End navbar===========================================*/
@@ -173,14 +188,25 @@ p.footer {
     background-size:cover;
     text-align:center;
     line-height: 20px;
-    /*position: relative;*/
+    position: relative;
 }
 
+#pTitle {
 
-#pTitle h1{
+    position: absolute;
+    top: 110%;
+    left: 58%;
+    width:100%;
+    transform: translate(-50%, -80%);
     text-align: left;
     color:#fff;
-    font-size: 4.5rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px #666,
+	  	             3px 3px 8px black;
+}
+
+#pTitle #jsells {
+    color:#F0DB4F;
 }
 
 @media only screen and (max-device-width: 1366px){
@@ -340,6 +366,7 @@ a:hover {
 }
 .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
+    box-shadow: -8px 12px 18px #888888;
 }
 .timeline > li.timeline-inverted > .timeline-panel:before {
     border-left-width: 0;
@@ -354,7 +381,7 @@ a:hover {
     right: auto;
 }
 .timeline-panel {
-    box-shadow: 0px 5px 18px #888888;
+    box-shadow: 8px 12px 18px #888888;
     border-radius: 10px;
 }
 .timeline-badge > a {
@@ -429,7 +456,9 @@ a:hover {
     height:auto;
     width:70%;
 }
-@media (max-width: 767px) {
+
+
+@media (max-width: 990px) {
     .time-container{
         padding:5px;
     }    
@@ -456,6 +485,7 @@ a:hover {
     ul.timeline > li > .timeline-panel {
         float: right;
         margin-right:1rem;
+        box-shadow: -8px 12px 18px #888888;
     }
     ul.timeline > li > .timeline-panel:before {
         border-left-width: 0;
@@ -475,6 +505,7 @@ a:hover {
         margin-top: 30px;
         margin-bottom: 30px;
     }
+    
     .timeline > li.timeline-inverted > .timeline-badge {
         left: 5px;
     }
@@ -484,86 +515,161 @@ a:hover {
     }
 }
 
-/*mroe media queries*/
 
+
+/*more media queries*/
+@media (min-width: 1135px){
+    /*font size for screens above 1135*/
+    #pTitle h1 {
+        font-size: 4.5rem;
+    }
+}
+@media only screen and (max-width:1405px) and (min-width: 1135px){
+    #pTitle h1 {
+        transform: translate(0%,-75%);
+    }
+}
+@media only screen and (max-width:1134px) and (min-width: 986px){
+    /*font size for screens above 986*/
+    #pTitle h1{
+        font-size:3.9rem;
+        transform: translate(0%,-100%)
+    }
+}
+@media (max-width: 1100px){
+    #pTitle h1 {
+        transform: translate(0%, -130%);
+    }
+}
+@media (max-width: 985px){
+    #pTitle h1 {
+        transform: translate(0%, -185%);
+    }
+}
+@media only screen and (max-width: 985px) and (min-width: 887px){
+    /*font size for screens above 887*/
+    #pTitle h1{
+        font-size:3.5rem;
+    }
+}
+@media(max-width:886px){
+    #pTitle h1 {
+        transform: translate(0%, -225%);
+    }
+}
+@media only screen and (max-width:886px) and (min-width: 837px){
+    /*font size for screens above 837*/
+    #pTitle h1{
+        font-size:3.3rem;
+    }
+    #pTitle {
+        transform: translate(-50%, -82%);
+    }
+}
+@media only screen and (max-width:836px) and (min-width: 787px){
+    /*font size for screens above 787*/
+    #pTitle h1{
+        font-size:3.1rem;
+    }
+    #pTitle {
+        transform: translate(-50%, -86%);
+    }
+}
+@media only screen and (max-width: 786px) and (min-width: 738px){
+    /*font size for screens above 738*/
+    #pTitle h1{
+        font-size:2.9rem;
+    }
+    #pTitle {
+        transform: translate(-50%, -95%);
+    }
+}
+@media(max-width:740px){
+    #pTitle h1 {
+        transform: translate(0%, -260%);
+    }
+}
+@media only screen and (max-width: 737px) and (min-width: 678px){
+    /*font size for screens between 678 and 738px*/
+    #pTitle h1{
+        font-size:2.66rem;
+    }
+    #pTitle {
+        transform: translate(-50%, -106%);
+    }
+}
+@media(max-width:677px){
+    #pTitle h1 {
+        transform: translate(0%, -370%);
+    }
+}
+@media only screen and (max-width: 677px) and (min-width: 576px){
+    /*font size for screens between 678 and 738px*/
+    #pTitle h1{
+        font-size:2.25rem;
+    }
+    #pTitle {
+        transform: translate(-50%, -130%);
+    }
+}
+@media(max-width:577px){
+    #pTitle h1 {
+        transform: translate(0%, -410%);
+    }
+}
+@media only screen and (max-width: 575px) and (min-width: 514px){
+    /*font size for screens between 678 and 738px*/
+    #pTitle h1{
+        font-size:2rem;
+    }
+    #pTitle {
+        transform: translate(-50%, -155%);
+    }
+}
+
+/*change the text layout past this point*/
+@media only screen and (max-width: 513px) and (min-width: 441px){
+    /*font size for screens between 678 and 738px*/
+    #pTitle h1{
+        font-size:1.65rem;
+    }
+    #pTitle {
+        transform: translate(-50%, -191%);
+    }
+}
+@media only screen and (max-width: 440px) and (min-width: 370px){
+    /*font size for screens between 678 and 738px*/
+    #pTitle h1{
+        font-size:1.4rem;
+    }
+    #pTitle {
+        transform: translate(-50%, -226%);
+    }
+}
+@media only screen and (max-width: 369px) and (min-width: 329px){
+    /*font size for screens between 678 and 738px*/
+    #pTitle h1{
+        font-size:1.25rem;
+    }
+    #pTitle {
+        transform: translate(-50%, -244%);
+    }
+}
+@media only screen and (max-width: 328px) and (min-width: 304px){
+    /*this covers screen slightly smaller than the iphone-4*/
+    #pTitle h1{
+        font-size:1.15rem;
+    }
+    #pTitle {
+        transform: translate(-50%, -244%);
+    }
+}
+
+/*678px and below will need a font size smaller than 2.66rem*/
 /*very small - pixel xl screen size*/
-@media(max-width: 1211px){
-    #pTitle h1 {
-        font-size: 3.9rem;
-    }
-}
-@media(max-width: 1061px){
-    #pTitle h1 {
-        font-size: 3.6rem;
-    }
-}
-@media(max-width: 1113px){
-    #pTitle h1 {
-        font-size: 3.5rem;    
-    }
-}
-@media(max-width: 888px){
-    #pTitle h1{
-        font-size: 3.2rem;
-    }
-}
-@media(max-width: 817px){
-    #pTitle h1{
-        font-size: 3rem;
-    }
-}
-@media(max-width: 762px){
-    #pTitle h1{
-        font-size: 2.8rem;
-    }
-}
-@media(max-width: 712px){
-    #pTitle h1{
-        font-size: 2.5rem;
-    }
-}
-@media(max-width: 639px){
-    #pTitle h1{
-        font-size: 2.3rem;
-    }
-}
-@media(max-width: 585px){
-    #pTitle h1{
-        font-size: 2rem;
-    }
-}
-@media(max-width: 529px){
-    #pTitle h1{
-        font-size: 1.8rem;
-    }
-}
-@media(max-width: 463px){
-    #pTitle h1 {
-        font-size: 1.6rem
-    }   
-}
-@media(max-width: 414px){
-    #pTitle h1 {
-        font-size: 1.4rem
-    }   
-}
-@media (max-width: 364px){
-    #pTitle h1 {
-        font-size:1.3rem;
-    }
-}
-@media(max-width: 339px){
-    #pTitle h1 {
-        font-size:1.2rem;
-    }
-}
-@media(max-width: 314px){
-    #pTitle h1 {
-        font-size:1.1rem;
-    }
-}
+
 /*about me section*/
-@media (max-width:767px){
+@media screen and (max-width:767px){
     .about-container{
         color:#000000;
         margin:0px auto;
