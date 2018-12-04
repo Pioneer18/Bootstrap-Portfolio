@@ -204,6 +204,9 @@ p.footer {
     flex-direction:column;
     justify-content: center;    
     align-items: center;
+    width:70%;
+    height:30%;
+    margin: auto;
     color:#fff;
     font-weight: 400;
     text-shadow: 1px 1px 1px #666,
@@ -212,17 +215,25 @@ p.footer {
 
 #title-text {
     font-family: "Raleway", "Helevtica";
-    font-size: 3.5rem;
-    line-height: 3.5rem;
+    font-size: 3rem;
+    line-height: 3rem;
 
 }
 
 #work-button {
-    padding:12px 50px 12px 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;    
+    align-items: center;
+    padding:1rem 2rem 1rem 1.5rem;
     border: 2px solid white;
-    box-sizing:inherit;
-    display: inline-block;
     cursor: pointer;
+    margin-top:20px;
+    box-shadow: 1px 1px 1px #666,
+    3px 3px 8px black;
+    font-weight: 650;
+    color: #fff;
+    
 }
 
 #pTitle #jsells {
@@ -242,6 +253,24 @@ p.footer {
         background-attachment: scroll;
     }
 }
+
+/*title-text font size media queries*/
+@media screen and (max-width: 699px){
+    #title-text{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (max-width:412) and (max-height:802px) and (orientation: landscape){
+    #title-text{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+}
+
+
+
 
 /*======================================End parallax==================================*/
 
