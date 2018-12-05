@@ -9,6 +9,13 @@
 
 /*===========================================================================================================*/
 
+/*Reset Border Box*/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 
 
@@ -19,6 +26,14 @@ body {
     font-weight: 500; 
     line-height: 2rem; 
     margin: 0 0 1.5rem; 
+} 
+body #p-body {
+    background: #ffffff;
+    font-family: 'Raleway', serif; 
+    font-weight: 500; 
+    line-height: 2rem; 
+    margin: 0 0 1.5rem; 
+    display: flex;
 } 
 h3{
     color:#000;
@@ -117,6 +132,11 @@ p.footer {
 .navbar {
     padding:0;
     background: #000000;
+    z-index: 1000;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
    
 }
 
@@ -146,7 +166,7 @@ p.footer {
     margin: 0 auto 6rem;
     display: block;
     height:auto;
-    width:70%;
+    width:50%;
     min-width: 150px;
   }
 
@@ -233,11 +253,52 @@ p.footer {
     3px 3px 8px black;
     font-weight: 650;
     color: #fff;
+    font-size:150%;
     
 }
 
+ #work-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #work-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #work-button:hover span {
+    padding-right: 25px;
+    color:#F0DB4F;
+    text-shadow: 1px 1px 1px #666,
+                       3px 3px 4px black;
+  }
+  
+  #work-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+#work-button:hover {
+    background:white;
+}
+
+
+#action{
+    text-decoration: none;
+    color: #fff;
+}
+
+
 #pTitle #jsells {
     color:#F0DB4F;
+
 }
 
 
@@ -255,10 +316,17 @@ p.footer {
 }
 
 /*title-text font size media queries*/
-@media screen and (max-width: 699px){
+@media screen and (max-width: 699px) and (min-width: 546px){
     #title-text{
         font-size: 2rem;
         line-height: 2rem;
+    }
+}
+
+@media screen and (max-width:545px){
+    #title-tex{
+        font-size: 1.7rem;
+        line-height:1.7rem;
     }
 }
 
@@ -593,3 +661,40 @@ a:hover {
     }
     
 }
+
+/*Portfolio Styles*/
+#g-container {
+    display: flex;
+    max-width: 1100px;
+    margin: 7rem auto 0rem;
+}
+
+#the-gallery{
+    display: flex;
+    flex-wrap:wrap;  
+    flex-direction: row;
+}
+
+/*default settings for mobile screens below 600px*/
+.project {
+    max-width:100%;
+    margin: 1rem;
+}
+
+.card-img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (min-width:600px){
+    .project {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .project {
+      width: calc(33.333% - rem);
+    }
+  }
