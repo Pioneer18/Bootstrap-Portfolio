@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function(){
 
 
     //For mobile devices, set the height of the parallax to the height of the mobile device, so the entire image is seen
@@ -12,4 +12,10 @@ $(function(){
          $(this).height(h)
         })
        }
+
+    
+    $("#work-button").on("click", function(){
+        window.location.href="portfolio.html";
+    })
 })
+

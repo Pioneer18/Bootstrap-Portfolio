@@ -13,16 +13,29 @@
 </head>
 <body>
     <header> <!--header-->
-        <div class="navbar navbar-expand-sm border-bottom mb-5"><!--BS4 navbar stacks for sm screens border on bottom (may need custom cs to size border thickness-->
-            <div class="container"><!--container fixed width 960px min yet responsive-->
-                <a class="navbar-brand" href="index.html">Jonathan Sells</a><!--logo tag-->
-                <ul class="navbar-nav ml-auto"><!--BS4 navbar navigation list to hold links pushed to the right-->
-                    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-                    <li class="nav-item border-left"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item border-left"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
+       <!--NAVBAR-->
+       <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container nav-container">    
+                <a class="navbar-brand" href="#">JS</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">About <!--<span class="sr-only">(current)</span>--></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./portfolio.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>    
-        </div>
+        </nav>
+        <!--END NAVBAR-->
     </header>
 
     <div class="container border p-5"><!--the main container-->
